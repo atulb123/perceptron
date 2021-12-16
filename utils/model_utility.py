@@ -3,9 +3,10 @@ import joblib
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import ListedColormap
-
+import logging
 
 class ModelUtility:
+    """"""
     def prepare_data(self, df):
         X = df.drop("y", axis=1)
         y = df["y"]
